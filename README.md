@@ -10,16 +10,17 @@ Every close bracket has a corresponding open bracket of the same type.
  
 
 Example 1:
-
-input: s = "()"
-Output: true
 -----------------------
+Input: s = "()"
+>Output: true
+
 Example 2:
-
-input: s = "()[]{}"
-Output: true
 -----------------------
-Example 3:
+Input: s = "()[]{}"
+>Output: true
 
-input: s = "(]"
-Output: false
+Example 3:
+-----------------------
+Input: s = "(]"
+  >Output: false
+
