@@ -97,4 +97,3 @@ int main()
 {
     char *a = addBinary("1111111", "1");
     printf("%s", a);
-}
