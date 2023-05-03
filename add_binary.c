@@ -95,5 +95,6 @@ char * addBinary(char * a, char * b){
 
 int main()
 {
-    printf("%s", addBinary("1111111", "1"));
+    char *a = addBinary("1111111", "1");
+    printf("%s", a);
 }
