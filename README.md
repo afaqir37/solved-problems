@@ -1,4 +1,4 @@
-# Some Algorithms Coding Problems
+# Some DSA Problems
 
 
 
