@@ -1,4 +1,26 @@
 #include <unistd.h>
+int _valid_numbers(int argc, char **argv) {
+    
+    int i;
+
+    i = 1;
+    while (i < argc) {
+        int j = 0;
+        if (argv[i][j] == '+' || argv[i][j] == '-')
+            j++;
+        while (argv[i][j]) {
+            
+            if (argv[i][j] > '9' || argv[i][j] < '0') {
+                printf("Error: %s is not a valid input\n", argv[i]);
+                return (1);
+            }
+            j++;
+        }
+        i++;
+    }
+    return (0);
+}
+
 void ft_putNbr(int n) {
     if (n < 0)
     {
@@ -36,6 +58,8 @@ int main(int argc, char **argv) {
     if (argc != 2)
         write(1, "\n", 1);
     else {
+	if (_valid_numbers(argc, argv))
+		return 1;
         int number = ft_atoi(argv[1]);
 	char i = '1';
 	int sign = 0;
