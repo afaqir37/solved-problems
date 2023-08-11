@@ -21,7 +21,7 @@ int _valid_numbers(int argc, char **argv) {
     return (0);
 }
 
-void ft_putNbr(int n) {
+void ft_putNbr(long n) {
     if (n < 0)
     {
 	n *= -1;
@@ -39,7 +39,7 @@ void ft_putNbr(int n) {
 
 int ft_atoi(char *s) {
     int i = 0;
-    int result = 0;
+    long int result = 0;
     int sign = 1;
     while (s[i])
     {
@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
     else {
 	if (_valid_numbers(argc, argv))
 		return 1;
-        int number = ft_atoi(argv[1]);
+        long int number = ft_atoi(argv[1]);
 	char i = '1';
 	int sign = 0;
         while (i <= '9') {
